@@ -28,11 +28,14 @@
 ######## File scope variable definitions ended ########
 
 ######## Program ########
+echo "Start mounting all available virtual memory(swap space) partitions..."
 # list all virtual_memory_partition's device file and turn into bash list format 
-for virtual_memory_partition in $(sudo blkid -t 'TYPE=swap' -o device | tr '\n' ' ')
+for virtual_memory_partition in $(blkid -t 'TYPE=swap' -o device | tr '\n' ' ')
 do
-	sudo swapon --discard ${virtual_memory_partition}
+	echo "Auto-mounting ${virtual_memory_partition} virtual memory(swap space) partition..."
+	swapon --discard ${virtual_memory_partition}
 done
+
 ## 正常結束 script 程式
 exit 0
 ######## Program ended ########
