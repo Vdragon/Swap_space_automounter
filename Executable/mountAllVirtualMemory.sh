@@ -2,7 +2,7 @@
 # 		宣告執行 script 程式用的殼程式(shell)
 ################## Header block ##################
 # Script 程式名稱 | Script Name
-# 		template.sh
+# 		mountAllVirtualMemory
 # 著作權宣告 | Copyright Declaration
 # 		Ｖ字龍(Vdragon) <pika1021@gmail.com> (c) 2012
 # 授權條款宣告 | License Declaration
