@@ -4,5 +4,5 @@
       * Thanks to stevea@forums.fedoraforum.org (not an email address!) for the original idea based on fdisk, I re-implement this using blkid tool instead.
 
 ## 授權條款宣告<br />License Declaration ##
-  GNU Lesser General Public License version 3.0 or later
-  http://www.gnu.org/licenses/lgpl.html
+  GNU Lesser General Public License version 3.0 or later  
+  <http://www.gnu.org/licenses/lgpl.html>
