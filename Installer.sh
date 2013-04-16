@@ -29,13 +29,13 @@
 
 ######## Program ########
 # create System V script
-	cp Executable/mountAllVirtualMemory.sh /etc/init.d/mountAllVirtualMemory
+	cp --force Executable/mountAllVirtualMemory.sh /etc/init.d/mountAllVirtualMemory
 
 # set to run at runlevel 2~5
-	ln --symbolic /etc/init.d/mountAllVirtualMemory /etc/rc2.d/S99mountAllVirtualMemory
-	ln --symbolic /etc/init.d/mountAllVirtualMemory /etc/rc3.d/S99mountAllVirtualMemory
-	ln --symbolic /etc/init.d/mountAllVirtualMemory /etc/rc4.d/S99mountAllVirtualMemory
-	ln --symbolic /etc/init.d/mountAllVirtualMemory /etc/rc5.d/S99mountAllVirtualMemory
+	ln --symbolic --force /etc/init.d/mountAllVirtualMemory /etc/rc2.d/S99mountAllVirtualMemory
+	ln --symbolic --force /etc/init.d/mountAllVirtualMemory /etc/rc3.d/S99mountAllVirtualMemory
+	ln --symbolic --force /etc/init.d/mountAllVirtualMemory /etc/rc4.d/S99mountAllVirtualMemory
+	ln --symbolic --force /etc/init.d/mountAllVirtualMemory /etc/rc5.d/S99mountAllVirtualMemory
 
 ## 正常結束 script 程式
 exit 0
