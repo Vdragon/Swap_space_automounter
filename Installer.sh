@@ -29,7 +29,7 @@
 
 ######## Program ########
 # create System V script
-	mv Executable/mountAllVirtualMemory.sh /etc/init.d/mountAllVirtualMemory
+	cp Executable/mountAllVirtualMemory.sh /etc/init.d/mountAllVirtualMemory
 
 # set to run at runlevel 2~5
 	ln --symbolic /etc/init.d/mountAllVirtualMemory /etc/rc2.d/S99mountAllVirtualMemory
