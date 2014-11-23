@@ -33,7 +33,7 @@ echo "Start mounting all available swap space partitions..."
 for swap_space_partition in $(blkid -t 'TYPE=swap' -o device | tr '\n' ' ')
 do
 	echo "Auto-mounting ${swap_space_partition} swap space partition..."
-	swapon --discard ${swap_space_partition}
+	swapon --discard "${swap_space_partition}"
 done
 
 ## 正常結束 script 程式
