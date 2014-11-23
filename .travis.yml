@@ -1,4 +1,11 @@
 language: c
+before_install:
+  - git submodule update
+  - cd 3rd_party_software/apt-get_only-update
+  - sudo make install
+  - cd ../..
+  - sudo install -D --owner=root --group=root --mode=0644 3rd_party_software/APT_Software_Sources_zh_TW/Ubuntu-prerelease.list /etc/apt/sources.list.d
+  - sudo apt-get_only-update /etc/apt/sources.list.d/Ubuntu-prerelease.list
 install:
   - sudo apt-get install shellcheck
 script: 
