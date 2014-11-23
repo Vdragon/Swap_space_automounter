@@ -1,6 +1,5 @@
 language: c
 before_install:
-  - git submodule update
   - cd 3rd_party_software/apt-get_only-update
   - sudo make install
   - cd ../..
