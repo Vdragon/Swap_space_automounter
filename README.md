@@ -6,3 +6,6 @@
 ## 授權條款宣告<br />License Declaration ##
   GNU Lesser General Public License version 3.0 or later  
   <http://www.gnu.org/licenses/lgpl.html>
+
+## Continuous Integration 狀態
+[![Build Status](https://travis-ci.org/Vdragon/Swap_space_automounter.svg)](https://travis-ci.org/Vdragon/Swap_space_automounter)

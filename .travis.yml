@@ -1,0 +1,9 @@
+language: c
+install:
+  - sudo apt-get install shellcheck
+script: 
+  - bash -nu Installer.sh
+  - shellcheck Installer.sh
+  - bash -nu Executable/mountAllSwapPartitions.sh
+  - shellcheck Executable/mountAllSwapPartitions.sh
+  
