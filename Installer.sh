@@ -4,7 +4,7 @@
 # Script 程式名稱 | Script Name
 # 		Swap_space_automounter installer
 # 著作權宣告 | Copyright Declaration
-# 		Ｖ字龍(Vdragon) <pika1021@gmail.com> (c) 2012, 2014
+# 		Ｖ字龍(Vdragon) <Vdragon.Taiwan@gmail.com> (c) 2012, 2014
 # 授權條款宣告 | License Declaration
 # 		GNU Lesser General Public License version 3.0 or later
 # 			http://www.gnu.org/licenses/lgpl.html
