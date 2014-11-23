@@ -2,9 +2,9 @@
 # 		宣告執行 script 程式用的殼程式(shell)
 ################## Header block ##################
 # Script 程式名稱 | Script Name
-# 		Virtual_memory_automounter installer
+# 		Swap_space_automounter installer
 # 著作權宣告 | Copyright Declaration
-# 		Ｖ字龍(Vdragon) <pika1021@gmail.com> (c) 2012
+# 		Ｖ字龍(Vdragon) <pika1021@gmail.com> (c) 2012, 2014
 # 授權條款宣告 | License Declaration
 # 		GNU Lesser General Public License version 3.0 or later
 # 			http://www.gnu.org/licenses/lgpl.html
@@ -29,13 +29,13 @@
 
 ######## Program ########
 # create System V script
-	cp --force Executable/mountAllVirtualMemory.sh /etc/init.d/mountAllVirtualMemory
+	cp --force Executable/mountAllSwapPartitions.sh /etc/init.d/mountAllSwapPartitions
 
 # set to run at runlevel 2~5
-	ln --symbolic --force /etc/init.d/mountAllVirtualMemory /etc/rc2.d/S99mountAllVirtualMemory
-	ln --symbolic --force /etc/init.d/mountAllVirtualMemory /etc/rc3.d/S99mountAllVirtualMemory
-	ln --symbolic --force /etc/init.d/mountAllVirtualMemory /etc/rc4.d/S99mountAllVirtualMemory
-	ln --symbolic --force /etc/init.d/mountAllVirtualMemory /etc/rc5.d/S99mountAllVirtualMemory
+	ln --symbolic --force /etc/init.d/mountAllSwapPartitions /etc/rc2.d/S99mountAllSwapPartitions
+	ln --symbolic --force /etc/init.d/mountAllSwapPartitions /etc/rc3.d/S99mountAllSwapPartitions
+	ln --symbolic --force /etc/init.d/mountAllSwapPartitions /etc/rc4.d/S99mountAllSwapPartitions
+	ln --symbolic --force /etc/init.d/mountAllSwapPartitions /etc/rc5.d/S99mountAllSwapPartitions
 
 ## 正常結束 script 程式
 exit 0

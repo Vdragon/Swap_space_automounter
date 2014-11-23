@@ -2,9 +2,9 @@
 # 		宣告執行 script 程式用的殼程式(shell)
 ################## Header block ##################
 # Script 程式名稱 | Script Name
-# 		mountAllVirtualMemory
+# 		mountAllSwapPartitions
 # 著作權宣告 | Copyright Declaration
-# 		Ｖ字龍(Vdragon) <pika1021@gmail.com> (c) 2012
+# 		Ｖ字龍(Vdragon) <pika1021@gmail.com> (c) 2012, 2014
 # 授權條款宣告 | License Declaration
 # 		GNU Lesser General Public License version 3.0 or later
 # 			http://www.gnu.org/licenses/lgpl.html
@@ -28,7 +28,7 @@
 ######## File scope variable definitions ended ########
 
 ######## Program ########
-echo "Start mounting all available virtual memory(swap space) partitions..."
+echo "Start mounting all available swap space partitions..."
 # list all swap_space_partition's device file and turn into bash list format 
 for swap_space_partition in $(blkid -t 'TYPE=swap' -o device | tr '\n' ' ')
 do
